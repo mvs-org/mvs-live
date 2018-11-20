@@ -4052,7 +4052,10 @@ h2.text-normal{
 	position: relative;
     bottom: 6px;
 }
-
+.twelve li a span.text-discord{
+    color: #94a0cc;
+    font-size: 15px;
+}
 .footerlogo{
 	height: 50px;
 	margin: 30px 0 10px;

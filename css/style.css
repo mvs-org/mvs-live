@@ -4052,8 +4052,15 @@ h2.text-normal{
 	position: relative;
     bottom: 6px;
 }
+
+.twelve li a:hover {
+    /* color: #525975;
+	font-size: 15px; */
+	-webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
 .twelve li a span.text-discord{
-    color: #94a0cc;
+    color: #525975;
     font-size: 15px;
 }
 .footerlogo{
@@ -4285,20 +4292,24 @@ h2.text-normal{
 	}
 
 }
-
+/* 
 .discord{
 		margin-top: 6px;
-		-webkit-filter: brightness(80%);
+		-webkit-filter: brightness(80%); 
 }
 
 .discord:hover{
-	-webkit-filter: brightness(100%);}
+	-webkit-filter: brightness(100%);
+} */
 .icon-discord{
-	margin-top: 6px;
-	width:40px;
+    margin-top: 8px;
+    width: 40px;
+}
+.icon-Vk{
+	width: 35px;
 }
 .icon-discord:hover{
-	width:40px;
+	/* width:40px; */
 }
 .text-discord {
 	top:6px;

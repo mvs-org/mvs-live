@@ -1,0 +1,16 @@
+@font-face {
+
+
+
+      font-family: 'SF-Pro-Text-Light'; 
+     src: url('../fonts/SFPro/SF-Pro-Text-Light.otf');
+     
+      /* 
+     src:url('../font/字体名称.woff') format('woff'),
+         url('../font/字体名称.ttf') format('truetype'),
+         url('../font/字体名称.svg') format('svg');
+
+        */
+
+
+    }

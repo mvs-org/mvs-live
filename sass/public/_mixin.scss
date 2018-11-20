@@ -1,0 +1,428 @@
+@import "variable";
+
+
+@mixin opacity($opacity:50) {
+  opacity: $opacity / 100;
+  filter:alpha(opacity=$opacity);
+}
+
+@mixin wpercentage($val) {
+  .w{
+    &_#{$val}{
+      width:percentage($val/100);
+    }
+  }
+}
+
+@mixin default-transition($str...){
+
+     transition:all 0.3s linear 0s;
+     -webkit-transition:all 0.3s linear 0s;
+     -moz-transition:all 0.3s linear 0s;
+     -o-transition:all 0.3s linear 0s;
+    transition-property: $str;
+    -moz-transition-property: $str;
+    -webkit-transition-property: $str;
+    -o-transition-property: $str;
+
+}
+
+
+@mixin linear-gradientY($color1:#000,$color2:#fff){
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, $color1 0%,$color2 100%); /* W3C */
+}
+
+@mixin linear-gradientX($color1:#000,$color2:#fff){
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+  background: linear-gradient(to right, $color1 0%,$color2 100%); /* W3C */
+}
+
+@mixin blur($val){
+  -webkit-filter: blur($val);
+  -moz-filter: blur($val);
+  -ms-filter: blur($val);
+  -o-filter: blur($val);
+  filter: blur($val);
+
+}
+
+@mixin userSelect(){
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+}
+
+@mixin box-shadow($str...){
+  -webkit-box-shadow:$str ;
+  -o-box-shadow: $str;
+  -moz-box-shadow: $str;
+  box-shadow: $str;
+}
+
+@mixin selectIcon{
+  -webkit-appearance:none;
+  outline:none;
+  background:#fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJ5JREFUeNqkjLEKxCAQRM0f+CV2frcgxMZPsLOzsrKysRCEgO7dWIQ7Qi4JNzDLMjv7mDGGaq30FvtldNC96rGcMymlqLV2WsYNHXQvgRgpJdJa07ZthwdkuKFzBduBcIyR1nWl3vv+iB0ZbndgX0A4hEDWWhpjTGNHdhcGL5P6Ie89lVLmzjlnQoiFPdABCDnnZiilfAQ7Bf6jlwADAP6hTrBSBs7zAAAAAElFTkSuQmCC) no-repeat right center;
+}
+
+
+.display_flex {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  //-webkit-box-pack: justify;
+  //-moz-box-pack: justify;
+  //-ms-flex-pack: justify;
+  //-webkit-box-align: center;
+  //-moz-box-align: justify;
+  //-ms-flex-align: center;
+  //justify-content: space-between;
+  align-content: center;
+}
+
+/*radio or checkbox*/
+@mixin input_hidden {
+
+    %visibility_hide {
+      visibility: hidden;
+      //visibility: visible\9;
+    }
+  @media \0screen\,screen\9 {
+    input[type='radio'] + .add_radioch {
+      visibility: hidden;
+    }
+  }
+
+  @media \0screen\,screen\9 {
+    input[type='radio'] {
+      visibility: visible;
+    }
+  }
+    %bginut {
+      background: url(#{$url}input_type.png);
+    }
+    input {
+      &[type='radio'] {
+        @extend %visibility_hide;
+        & + .add_radioch {
+          @extend %bginut;
+          width: 16px;
+          height: 16px;
+          position: relative;
+          left: -10px;
+          top: 3px;
+          display: inline-block;
+          background-position:0 -72px;
+        }
+        &:checked + .add_radioch {
+          @extend %bginut;
+          background-position:0 -112px;
+
+        }
+      }
+      &[type='checkbox'] {
+        @extend %visibility_hide;
+        visibility: visible\9;
+        float:none;
+        & + .add_checkboxch {
+          @extend %bginut;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          top: 3px;
+          display: inline-block;
+          //background-position:0 -0px;
+          visibility: hidden\9;
+        }
+        &:checked + .add_checkboxch {
+          @extend %bginut;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          top: 3px;
+          display: inline-block;
+          //background-position:0 -0px;
+          background-position: 0 -36px;
+        }
+
+      }
+  }
+
+}
+
+
+/*radio or checkbox 2*/
+@mixin input_hidden222 {
+
+  %visibility_hide {
+    visibility: hidden;
+    //visibility: visible\9;
+  }
+  @media \0screen\,screen\9 {
+    input[type='radio'] + .add_radioch {
+      visibility: hidden;
+    }
+  }
+
+  @media \0screen\,screen\9 {
+    input[type='radio'] {
+      visibility: visible;
+    }
+  }
+  %bginut {
+    background: url(#{$url}sprite.png);
+  }
+  @extend .c_pointer;
+  @extend .user-select;
+
+  input {
+    &[type='radio'] {
+      @extend %visibility_hide;
+      & + .add_radioch {
+        @extend %bginut;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        left: -10px;
+        top: 3px;
+        display: inline-block;
+        background-position:0 -72px;
+      }
+      &:checked + .add_radioch {
+        @extend %bginut;
+        background-position:0 -112px;
+
+      }
+    }
+    &[type='checkbox'] {
+      @extend %visibility_hide;
+      visibility: visible\9;
+      float:none;
+      & + .add_checkboxch {
+        @extend %bginut;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: inline-block;
+        background-position: 0 -35px;
+        //background-position:0 -0px;
+        //visibility: hidden\9;
+      }
+      &:checked + .add_checkboxch {
+        @extend %bginut;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: inline-block;
+        //background-position:0 -0px;
+        background-position: 0 -0px;
+      }
+
+    }
+  }
+
+}
+
+
+@mixin input_radiocheckbox {
+
+  %visibility_hide {
+    visibility: hidden;
+    //visibility: visible\9;
+  }
+  @media \0screen\,screen\9 {
+    input[type='radio'] + .add_radioch {
+      visibility: hidden;
+    }
+  }
+
+  @media \0screen\,screen\9 {
+    input[type='radio'] {
+      visibility: visible;
+    }
+  }
+  %bginut {
+    background: url(#{$url}input_type.png);
+  }
+  input {
+    //&[type='radio'] {
+    //  @extend %visibility_hide;
+    //  & + .add_radioch {
+    //    @extend %bginut;
+    //    width: 16px;
+    //    height: 16px;
+    //    position: relative;
+    //    left: -10px;
+    //    top: 3px;
+    //    display: inline-block;
+    //    background-position:0 -72px;
+    //  }
+    //  &:checked + .add_radioch {
+    //    @extend %bginut;
+    //    background-position:0 -112px;
+    //
+    //  }
+    //}
+    &[type='checkbox'] {
+      @extend %visibility_hide;
+      visibility: visible\9;
+      float:none;
+      & + .add_checkboxch {
+        @extend %bginut;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        display: inline-block;
+        background-position:0 -364px;
+        visibility: hidden\9;
+      }
+      &:checked + .add_checkboxch {
+        @extend %bginut;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        display: inline-block;
+        //background-position:0 -0px;
+        background-position: 0 -403px;
+      }
+
+    }
+  }
+
+}
+/*
+input[type='radio'] + .add_radioch, input[type='radio']:checked + .add_radioch, input[type='checkbox'] + .add_checkboxch, input[type='checkbox']:checked + .add_checkboxch  {
+  background: url(#{$url}input_type.png);
+  cursor: pointer;
+}
+input[type='radio'] + .add_radioch {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: -10px;
+  top: 3px;
+  display: inline-block;
+  background-position:0 -72px;
+}
+input[type='radio']:checked + .add_radioch {
+  background-position:0 -112px;
+}
+
+input[type='checkbox'] + .add_checkboxch {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  display: inline-block;
+  background-position:0 -0px;
+}
+input[type='checkbox']:checked + .add_checkboxch {
+  background-position:0 -36px;
+}*/
+
+@mixin transition_s{
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+
+@mixin transition_rotate90{
+  transform: rotate(90deg);
+}
+
+@mixin cc_input{
+  width: 56px;
+  height: 24px;
+  *line-height: 24px;
+  *width: 36px;
+  *height: 14px;
+  *line-height: 14px;
+  border: 1px solid #eeeeee;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+
+@mixin cc_ctitle{
+  border-left: 3px solid #f60;
+  height: 16px;
+  display: block;
+  line-height: 16px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+@mixin input_focus{
+  border-color: #ff8838;
+  outline: 0;
+  @include box-shadow( inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 0, 0, .5) )
+}
+
+@mixin sprite_bg{
+  background: url(#{$url}sprite.png) no-repeat;
+}
+
+.input_focus{
+  border-color: #ff8838;
+  outline: 0;
+  @include box-shadow( inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 0, 0, .5) )
+}
+
+
+
+ .sprite_bg{
+  background: url(#{$url}sprite.png) no-repeat;
+}
+
+.padding420{
+  padding: 4px 20px;
+}
+
+.ccc_h2{
+  border-left: 3px solid #f60;
+  height: 12px;
+  display: block;
+  line-height: 12px;
+  padding-left: 10px;
+  //margin-top: 10px;
+  padding-left: 5px;
+  @extend .font14;
+}
+
+@mixin gr9_color{
+  ::-moz-placeholder{color:red;}              //ff
+  ::-webkit-input-placeholder{color:red;}     //chrome,safari
+  :-ms-input-placeholder{color:red;}          //ie10
+}

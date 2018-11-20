@@ -1,0 +1,72 @@
+@import "mixin";
+html,body,div,span,h2,h3,h4,h5,h6,p,a,img,s,strong,button,input,select,textarea,b,u,i,center,dl,dt,dd,ol,ul,li,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,canvas,footer,header,menu,nav,section,audio,video{
+  margin:0;
+  padding:0;
+  border:none;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+html{
+   //overflow-x: hidden;
+  font-size:percentage(1);
+ /* overflow-y:scroll;*/
+  /* -webkit-text-size-adjust:none;*/
+}
+ol,ul{
+  list-style:none;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+a{
+
+  text-decoration:none;
+  &:visited,&:hover,&:active{
+    text-decoration:none;
+    outline:none;
+  }
+  &:focus {
+    color: #23527c;
+    text-decoration: underline;
+  }
+}
+input{
+  &[type='submit'],&[type='button']{
+    @include userSelect();
+  }
+  &[type='number'],&[type='submit'],&[type='text'],&[type='button']{
+    -webkit-appearance:none;
+    outline:none;
+
+  }
+  &[type='number']::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+  }
+  &[type='number']::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+  }
+}
+.clearfix{
+  &:after{
+      content:"";
+      display:table;
+      clear:both;
+      overflow:hidden;
+    }
+  &:before{
+    content:"";
+    display:table;
+  }
+  zoom:1;
+}
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

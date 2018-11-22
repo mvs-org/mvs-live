@@ -455,7 +455,9 @@ line-height: 30px;
     margin: 30px 0 60px;
 }
 
-
+.Markets-exchange{
+    margin-bottom: 60px;
+}
 /* features end */
 
 .h2-tlfont{
@@ -495,7 +497,7 @@ color: #FFFFFF;
     font-weight: lighter;
 
     width: 220px;
-    height: 320px;
+    height: 350px;
     text-align: center;
     margin: 0 auto 14px;
     padding: 25px 10px;
@@ -520,7 +522,13 @@ color: #FFFFFF;
     /* background: rgb(14, 25, 69); */
 }
 
-
+.photo, .AmbPhoto, .team-amb .item:hover .photo, .team-amb .item:hover .AmbPhoto{
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
 .photo{
     width: 72px;
     height: 82px;
@@ -540,7 +548,22 @@ color: #FFFFFF;
 .TeamBox .item:hover .photoFirst, .team-amb .item:hover .photoFirst{
     display: none;
 }
-
+.personal-info {
+    margin: 15px 0 10px;
+}
+.about-md{
+    font-size: 18px;
+    color: rgba(157, 170, 210, 0.3);
+  a{
+    margin: 0 5px;
+    &:hover{
+        color:  rgba(157, 170, 210, 0.8);
+    }
+    &:active,  &:visited{
+        color: rgba(157, 170, 210, 0.3);
+    }
+  }
+}
 
 // .boxL2 .item {
     /* margin: 14px */
@@ -658,7 +681,8 @@ color: #FFFFFF;
     top: 100px; 
      margin-top: 210px;
 */
-    top: 110px;
+    // top: 110px;
+    top:  -50px;
     position: relative;
     }
 
@@ -684,18 +708,18 @@ color: #FFFFFF;
 
 .t-name{
     font-weight: lighter;
-    font-size: 26px;
+    font-size: 22px;
 color: #5DF5E0;
 /* letter-spacing: 0; */
 }
 .positionbox{
     /* opacity: 0.8; */
-font-size: 16px;
-margin: 10px 0;
-/* color: #FFFFFF; */
-color:rgba(255, 255, 255, .8);
-font-style: normal;
-line-height: 1.2;
+        /* color: #FFFFFF; */
+    font-size: 14px;
+    margin: 10px 0;
+    color:rgba(255, 255, 255, .8);
+    font-style: normal;
+    line-height: 1.2;
 
 }
 .team-amb .personal-info {
@@ -746,16 +770,22 @@ letter-spacing: 0;
 }
 
 
-.ambass a {
-    display: block;
-    padding: 10px 0;
-    width: 120px;
-    /* background: #009fe1; */
-    margin: 30px auto 0;
-    text-align: center;
-    color: #17234D;
-    border-radius: 36px;
-    font-size: 22px;
+.ambass {
+    a {
+        display: block;
+        padding: 10px 0;
+        width: 120px;
+        /* background: #009fe1; */
+        margin: 30px auto 0;
+        text-align: center;
+        color: #17234D;
+        border-radius: 36px;
+        font-size: 22px;
+    
+    }
+    .t-name {
+        font-size: 26px;
+    }
 }
 .ambass h5.JoinAd  {
     /* font-size: 20px;
@@ -2446,14 +2476,17 @@ input{
 }
 .Paginatione a{
 
-    width: 100px;
+    width: 70px;
     line-height: 34px;
     height: 34px;
     text-align: center;
     color: #fff;
     /* display: block; */
-    background: #f60;
-    background: #FFFFFF;
+    // background: #f60;
+    background-color: #FFFFFF;
+   
+
+
     border: 1px solid #EEEEEE;
     // border-radius: 2px;
     font-size: 12px;
@@ -2465,6 +2498,24 @@ input{
         border-left: none;
         border-right: none;
     }
+
+    &.prev{
+        background: url(../images/mvs2018/left-bicon.png) no-repeat;
+        background-size: 50%;
+        background-position: center;
+        width: 35px;
+        /* height: 35px; */
+        text-indent: -999em;
+    }
+    &.next{
+        background: url(../images/mvs2018/right-bicon.png) no-repeat;
+        background-size: 50%;
+        background-position: center;
+        width: 35px;
+        // height: 35px;
+        text-indent: -999em;
+     
+        }
 }
 
 

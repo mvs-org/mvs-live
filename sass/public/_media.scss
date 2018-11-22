@@ -95,7 +95,7 @@ img {
 	}
 
 	.w-item .item {
-			height: 265px !important;
+			height: 320px !important;
 			/* padding: 20px !important;
 			margin-bottom: 45px; */
 	}
@@ -153,6 +153,10 @@ img {
 
 @media only screen and (max-width: 475px) and (min-width: 300px){
 
+	.mvs-slbox img {
+		width: 200px !important;
+	}
+
 	.mvs-slgbox{
 		margin: 30px auto;
 	}
@@ -186,6 +190,18 @@ img {
 		color: #17234D;
 		border-radius: 36px;
 		font-size: 16px;
+	}
+
+
+	// Roadmap
+	.roadmapText {
+		font-size: 12px !important; 
+		color: #FFFFFF;
+		letter-spacing: 0;
+		text-align: center;
+		width: 90px !important; 
+		display: inline-block;
+		line-height: 2;
 	}
 }
 
@@ -273,7 +289,7 @@ img {
 	// letter-spacing: 0;
 	// text-align: center;
 	top: -9px;
-	font-size: 1rem;
+	font-size: 1.8rem;
 	display: inline-block;
 	padding: 0 6px;
 }
@@ -676,10 +692,10 @@ img {
 			display: inline-block;
 			/* margin: 0 auto; */
 
-			// width: 33.33%;
 			height: auto !important;
-			// float: left;
 			padding: 10px 0 !important;
+			width: 33.33%;
+			float: left;
 	}
 
 	.AmbPhoto {
@@ -696,7 +712,7 @@ img {
 	}
 	.t-name {
 			font-weight: lighter;
-			font-size: 18px;
+			font-size: 18px !important;
 			color: #5DF5E0;
 			/* letter-spacing: 0; */
 	}
@@ -781,7 +797,7 @@ img {
 			// margin: 0 auto;
 	}
 	.footerlogo {
-			height: 65px;
+			// height: 65px;
 			margin: 40px 0 20px;
 			// margin: 30px 0 30px;
 	}
@@ -904,15 +920,44 @@ img {
 		vertical-align: middle;
 		line-height: 80px;
 		display: inline-block;
+		text-indent: -999em;
 	}
 	.owl-carousel .owl-nav .owl-next{
 		right: 5%;  
 		position: absolute;
+
+		&::after{
+			content: '';
+			background: url(../images/mvs2018/right-wicon.png) no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 35px;
+			height: 35px;
+			display: block;
+			position: absolute;
+			top: 24px;
+			left: 25px;
+		}
+		
 	}
 	.owl-carousel .owl-nav .owl-prev{
 	
 		left: 5%;
 		position: absolute;
+
+		&::after{
+			content: '';
+			background: url(../images/mvs2018/left-wicon.png) no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 35px;
+			height: 35px;
+			display: block;
+			position: absolute;
+			top: 24px;
+			left: 20px;
+		}
+
 	}
 
 	.year_time {
@@ -978,7 +1023,7 @@ img {
 		}
 		.num-02 {
 		    position: absolute;
-			top: 41%;
+			top: 40%;
 			left: 40%;
 		}
 	}
@@ -1002,12 +1047,12 @@ img {
 		}
 		.num-03{
 		    position: absolute;
-			top: 41%;
+			top: 40%;
 			left: 42%;
 		}
 		.num-04{
 		    position: absolute;
-			top: 37%;
+			top: 36%;
 			left: 60%;
 		}
 		.num-05{
@@ -1085,6 +1130,9 @@ img {
 
 @media only screen and (min-width: 769px){
 
+	.TeamBox{
+		min-height: 1600px;
+	}
 	.btn-mbox.wp-btn{
 			margin-right: 20px;
 			}
@@ -1148,7 +1196,7 @@ img {
 		.num-01{
 			// top:40%;
 			// left:16%;
-			top: 54%;
+			top: 50%;
 			left: 44%;
 		}
 	}
@@ -1159,7 +1207,7 @@ img {
 			left: 15%;
 		}
 		.num-02 {
-			top: 46%;
+			top: 45%;
 			left: 30%;
 		}
 	}
@@ -1175,7 +1223,7 @@ img {
 			left: 17%;
 		}
 		.num-03{
-			top: 46%;
+			top: 45%;
 			left: 31%;
 		}
 		.num-04 {
@@ -1184,7 +1232,7 @@ img {
 		}
 		
 		.num-05{
-			top: 32%;
+			top: 31%;
 			left: 78%;
 		}
 	
@@ -1248,11 +1296,11 @@ img {
 	
 	.RD2017{
 		.num-01{
-			top: 42%;
+			top: 45%;
 			left: 15%;
 		}
 		.num-02 {
-			top: 46%;
+			top: 49%;
 			left: 31%;
 		}
 	}
@@ -1475,7 +1523,7 @@ img {
 					content: ' ';
 					width: 30%;
 					height: 2px;
-					bottom: -1px;
+					bottom: -2px;
 					left: 0;
 			}
 			&::after{
@@ -1485,16 +1533,18 @@ img {
 					content: ' ';
 					width: 30%;
 					height: 2px;
-					bottom: -1px;
-					right: 0;
+					bottom: -2px;
+					right: -1px;
 			}
 }
 
 .menu ul li a{
 	/* display:block;
 	width:100%; */
-	padding: 10px 0;
-	/*padding:0*/
+
+	padding: 0;
+    height: 50px;
+    line-height: 50px;
 }
 
 // .sl-language {

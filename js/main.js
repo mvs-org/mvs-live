@@ -88,41 +88,41 @@ $('.spe-hover').mouseleave(function(){
 
         }
     );
-    $(".home-c-slider").bxSlider({
-        mode: "horizontal",
-        pager: false,
-        controls: true,
-        nextText: '<i class="bs-right fa fa-angle-right"></i>',
-        prevText: '<i class="bs-left fa fa-angle-left"></i>'
-    });
-    $(".home-bg-slider").bxSlider({
-        mode: "fade",
-        auto: true,
-        speed: 1e3,
-        pager: false,
-        controls: false,
-        nextText: '<i class="bs-right fa fa-angle-right"></i>',
-        prevText: '<i class="bs-left fa fa-angle-left"></i>'
-    });
-    $(".home-bgc-slider").bxSlider({
-        mode: "fade",
-        pager: true,
-        controls: true,
-        nextText: '<i class="bs-right fa fa-angle-right"></i>',
-        prevText: '<i class="bs-left fa fa-angle-left"></i>'
-    });
-    $(".quote-slider").bxSlider({
-        mode: "horizontal",
-        controls: false,
-        adaptiveHeight: true
-    });
-    $(".img-slider").bxSlider({
-        mode: "fade",
-        pager: true,
-        controls: true,
-        nextText: '<i class="bs-right fa fa-angle-right"></i>',
-        prevText: '<i class="bs-left fa fa-angle-left"></i>'
-    });
+    // $(".home-c-slider").bxSlider({
+    //     mode: "horizontal",
+    //     pager: false,
+    //     controls: true,
+    //     nextText: '<i class="bs-right fa fa-angle-right"></i>',
+    //     prevText: '<i class="bs-left fa fa-angle-left"></i>'
+    // });
+    // $(".home-bg-slider").bxSlider({
+    //     mode: "fade",
+    //     auto: true,
+    //     speed: 1e3,
+    //     pager: false,
+    //     controls: false,
+    //     nextText: '<i class="bs-right fa fa-angle-right"></i>',
+    //     prevText: '<i class="bs-left fa fa-angle-left"></i>'
+    // });
+    // $(".home-bgc-slider").bxSlider({
+    //     mode: "fade",
+    //     pager: true,
+    //     controls: true,
+    //     nextText: '<i class="bs-right fa fa-angle-right"></i>',
+    //     prevText: '<i class="bs-left fa fa-angle-left"></i>'
+    // });
+    // $(".quote-slider").bxSlider({
+    //     mode: "horizontal",
+    //     controls: false,
+    //     adaptiveHeight: true
+    // });
+    // $(".img-slider").bxSlider({
+    //     mode: "fade",
+    //     pager: true,
+    //     controls: true,
+    //     nextText: '<i class="bs-right fa fa-angle-right"></i>',
+    //     prevText: '<i class="bs-left fa fa-angle-left"></i>'
+    // });
     $(function() {
         var e = $(".services-slider");
         e.owlCarousel({
@@ -238,39 +238,39 @@ $('.spe-hover').mouseleave(function(){
             })
         })
     });
-    $(".popup").magnificPopup({
-        type: "image",
-        fixedContentPos: false,
-        fixedBgPos: false,
-        removalDelay: 300,
-        mainClass: "mfp-fade"
-    });
-    $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-        disableOn: 700,
-        type: "iframe",
-        fixedContentPos: false,
-        fixedBgPos: false,
-        removalDelay: 300,
-        mainClass: "mfp-fade",
-        preloader: false
-    });
-    $(".popup-gallery").magnificPopup({
-        type: "image",
-        gallery: {
-            enabled: true
-        },
-        fixedContentPos: false,
-        fixedBgPos: false,
-        removalDelay: 300,
-        mainClass: "mfp-fade"
-    });
-    $(document).ready(function() {
-        $(".equal").children(".col").equalizeHeight();
-        $(window).resize(function() {
-            $(".equal").children(".col").equalizeHeight()
-        })
-    });
-    $(".responsive-video").fitVids()
+    // $(".popup").magnificPopup({
+    //     type: "image",
+    //     fixedContentPos: false,
+    //     fixedBgPos: false,
+    //     removalDelay: 300,
+    //     mainClass: "mfp-fade"
+    // });
+    // $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+    //     disableOn: 700,
+    //     type: "iframe",
+    //     fixedContentPos: false,
+    //     fixedBgPos: false,
+    //     removalDelay: 300,
+    //     mainClass: "mfp-fade",
+    //     preloader: false
+    // });
+    // $(".popup-gallery").magnificPopup({
+    //     type: "image",
+    //     gallery: {
+    //         enabled: true
+    //     },
+    //     fixedContentPos: false,
+    //     fixedBgPos: false,
+    //     removalDelay: 300,
+    //     mainClass: "mfp-fade"
+    // });
+    // $(document).ready(function() {
+    //     $(".equal").children(".col").equalizeHeight();
+    //     $(window).resize(function() {
+    //         $(".equal").children(".col").equalizeHeight()
+    //     })
+    // });
+    // $(".responsive-video").fitVids()
 
 })(jQuery);
 
@@ -339,14 +339,14 @@ $('.menu ul li').click(function(){
 
 
 
-		/**  sl-language bebin **/
+    /**  sl-language bebin **/
 
-		$('.sl-language').mouseenter(function () {
-			$('.dropdown-menubox').slideDown(300);
-		})
+    $('.sl-language').mouseenter(function () {
+        $('.dropdown-menubox').slideDown(300);
+    })
 
-		$('.sl-language').mouseleave(function () {
-			$('.dropdown-menubox').slideUp(200);
-		})
+    $('.sl-language').mouseleave(function () {
+        $('.dropdown-menubox').slideUp(200);
+    })
 
-		/**  sl-language end **/
+    /**  sl-language end **/

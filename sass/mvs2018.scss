@@ -827,6 +827,7 @@ h2.H2-tl, .partners-box .ptn-tl{
     // padding-left: 80px;
     margin: 15px auto;
     text-align: center;
+    height: 42px;
 }
 
 
@@ -845,7 +846,7 @@ h2.H2-tl, .partners-box .ptn-tl{
     margin: 0 auto;
 }
 .footerlogo {
-    height: 75px;
+    // height: 75px;
     margin: 30px 0 30px;
 }
 .mvsLogoBox{
@@ -1725,9 +1726,11 @@ text-align: center;
             //   background: #35435b; 
             // }
               .amp-headerbox.fixedtop .tb-logo img {
-                width: 145px; }
+                // width: 145px; 
+            }
             .amp-headerbox .tb-logo img {
-              width: 175px; }
+              width: 35px; 
+            }
           
           .amp-homeinfo * {
             margin: 0;
@@ -2436,7 +2439,7 @@ input{
     display: block;
     padding: 0 20px;
     position: relative;
-    
+    outline: none;
 }
 
 .News-searchbox{

@@ -465,7 +465,7 @@ img {
 							float: none;
 							width: 100% !important;
 							padding: 0 1rem;
-							margin-top: 40px;
+							margin: 40px 0 20px;
 					}
 
 					.BaaS-PJbox{
@@ -673,9 +673,10 @@ img {
 			display: none;
 		}
 }
-.amp-homeinfo .banner-box {
-	background-image: none;
-}
+
+	.amp-homeinfo .banner-box {
+		background-image: none;
+	}
 
 
 	/*
@@ -765,8 +766,8 @@ img {
 	}
 	.s-tips{
 			text-align: center;
-			font-size: .65rem;
-	letter-spacing: -.3px;
+			font-size: 12px;
+			letter-spacing: -.3px;
 	
 	}
 
@@ -1099,9 +1100,24 @@ img {
 	/*
 			 home  Roadmap end
 	*/
+
+
+
+
+	//  Ambassador Program begin
+	.amp-headerbox .tb-logo {
+		width: 35px;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	
+
 }
 
 @media (width: 768px) {
+
 	.News-title {
 		font-size: 12px;
 		color: #333333;
@@ -1122,6 +1138,13 @@ img {
 		text-align: right;
 		line-height: 35px;
 		font-size: 16px;
+	}
+
+
+	// BaaS
+	.rightimgcbox img {
+		max-width: 240px !important;
+		/* margin-top: 160px !important; */
 	}
 }
 
@@ -1677,8 +1700,8 @@ img {
 			width: 100%;
 	}
 
-	.amp-headerbox.fixedtop .tb-logo img {
-		width: 130px; }
+	// .amp-headerbox.fixedtop .tb-logo img {
+	// 	width: 35px; }
 
 	.amp-slgtl {
 		font-size: 24px; }

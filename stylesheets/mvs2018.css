@@ -239,13 +239,13 @@ h2.H2-tl, .partners-box .ptn-tl { color: #fff; font-size: 34px; }
 /* footer */
 .footer { background: #05123D; /* padding-top: 25px; */ text-align: center; }
 
-.twelve li { margin: 15px auto; text-align: center; }
+.twelve li { margin: 15px auto; text-align: center; height: 42px; }
 
 .twelve li a { color: #525975; width: 125px; text-align: left; display: inline-block; }
 
 .footer-leftbox { text-align: left; max-width: 220px; margin: 0 auto; }
 
-.footerlogo { height: 75px; margin: 30px 0 30px; }
+.footerlogo { margin: 30px 0 30px; }
 
 .mvsLogoBox { border-right: 1px solid rgba(151, 151, 151, 0.2); padding: 20px 0; }
 
@@ -817,9 +817,7 @@ text-align: center; */ }
 
 .amp-headerbox { background: transparent; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-.amp-headerbox.fixedtop .tb-logo img { width: 145px; }
-
-.amp-headerbox .tb-logo img { width: 175px; }
+.amp-headerbox .tb-logo img { width: 35px; }
 
 .amp-homeinfo * { margin: 0; padding: 0; }
 
@@ -1010,7 +1008,7 @@ input { outline: none; }
 .News-box .col-sm-4::before { background: #FFFFFF; border: 2px solid #508BF4; content: ''; width: 10px; height: 10px; display: block; position: absolute; left: -5px; top: 20px; border-radius: 100%; }
 .News-box .col-sm-4 .items { border-bottom: 1px solid #EDEDED; padding: 10px 0; }
 
-.News-search { width: 298px; height: 36px; display: block; background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 19px; border-radius: 36px; display: block; padding: 0 20px; position: relative; }
+.News-search { width: 298px; height: 36px; display: block; background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 19px; border-radius: 36px; display: block; padding: 0 20px; position: relative; outline: none; }
 
 .News-searchbox { position: relative; }
 .News-searchbox::before { content: ''; background-image: url(../images/mvs2018/News/searchbtn.png); background-position: center center; /* background-color: #05123D; */ width: 25px; height: 24px; background-size: cover; display: block; position: absolute; top: 5px; right: 15px; z-index: 1000; }
@@ -1111,7 +1109,7 @@ line-height: 30px; */ } }
   /* 		 BaaS begin */
   .BaaS_cbox .sld02 { padding: 20px 0; }
   .BaaS_cbox .w-w60 { float: none; width: 100% !important; }
-  .BaaS_cbox .w-w40 { float: none; width: 100% !important; padding: 0 1rem; margin-top: 40px; }
+  .BaaS_cbox .w-w40 { float: none; width: 100% !important; padding: 0 1rem; margin: 40px 0 20px; }
   .BaaS_cbox .BaaS-PJbox { padding: 20px; }
   .swiper-slide, .sld01, .sld02, .sld03 { height: 650px !important; }
   /* 	 Wallet begin */
@@ -1157,7 +1155,7 @@ line-height: 30px; */ } }
   .sign-title { margin-bottom: 40px; }
   .sname-box .btn-mbox { max-width: inherit; font-size: 1.1rem; font-weight: 600; }
   #signup .message { text-align: center; margin-top: 20px; }
-  .s-tips { text-align: center; font-size: .65rem; letter-spacing: -.3px; }
+  .s-tips { text-align: center; font-size: 12px; letter-spacing: -.3px; }
   .mvsLogoBox.PC-show { display: none; }
   .mvsLogoBox.WAP-show { display: block; border-right: none; }
   .PC-show { display: none !important; }
@@ -1202,11 +1200,13 @@ line-height: 30px; */ } }
   .RD2019 .num-02 { position: absolute; top: 34%; left: 65%; }
   .roadmap { position: relative; overflow: hidden; color: #333; background: url(../images/mvs2018/svg/roadmap-bgWAP.png) no-repeat; background-size: cover; }
   .section-header h3 { font-size: 30px; color: #fff; text-align: center; font-weight: 400; position: relative; padding-bottom: 15px; top: 20px; }
-  /* 		 home  Roadmap end */ }
+  /* 		 home  Roadmap end */
+  .amp-headerbox .tb-logo { width: 35px; float: none; margin: 0 auto; text-align: center; } }
 @media (width: 768px) { .News-title { font-size: 12px; color: #333333; }
   .News-wbox .WAP-show { display: none !important; }
   .News-wbox .PC-show { display: block !important; }
-  .News-head .News-title { border-bottom: 1px solid #EDEDED; display: block; height: 35px; width: 60%; text-align: right; line-height: 35px; font-size: 16px; } }
+  .News-head .News-title { border-bottom: 1px solid #EDEDED; display: block; height: 35px; width: 60%; text-align: right; line-height: 35px; font-size: 16px; }
+  .rightimgcbox img { max-width: 240px !important; /* margin-top: 160px !important; */ } }
 @media only screen and (min-width: 769px) { .TeamBox { min-height: 1600px; }
   .btn-mbox.wp-btn { margin-right: 20px; }
   .PC-show { display: block; }
@@ -1285,7 +1285,6 @@ width:100%; */ padding: 0; height: 50px; line-height: 50px; }
 @media (max-width: 768px) { .become-ampbox { padding: 40px 0; }
   .groups-ampbox .text-center { height: 100%; max-height: inherit; max-width: 382px; width: 100%; border-radius: 4px; margin: 0 auto; }
   .groups-ampbox .col-sm-6 { width: 100%; }
-  .amp-headerbox.fixedtop .tb-logo img { width: 130px; }
   .amp-slgtl { font-size: 24px; }
   .amp-tl { font-size: 18px; margin: 55px 0 20px; }
   .amp-des { font-size: 16px; }

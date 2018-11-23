@@ -929,7 +929,7 @@ a.arrow-link:hover,a.arrow-link:hover:before{
 .tb-logo{
 	font-size: 0;
 	margin: 0;
-	width: 187px;
+	width: 35px;
 	/*width: 100px;*/
 	/*height: 70px;*/
 }
@@ -960,7 +960,7 @@ a.arrow-link:hover,a.arrow-link:hover:before{
 	/*max-height:47px;*/
 	/*margin:15px 10px 15px 0;*/
 	display:block;
-	width: 125px;
+	width: 35px;
 	/*height:67px;*/
 	/*width: 100px;*/
 }
@@ -2939,10 +2939,10 @@ a:hover{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-	.tb-logo img {
+	/* .tb-logo img {
 		width: 140px;
 		margin-top: 5px;
-	}
+	} */
 	.jijinhui-logo {
 		width: 130px !important;
 	}
@@ -3382,12 +3382,12 @@ ul, li{
 .swiper-slide, .sld01, .sld02, .sld03{
 	width: 100% !important;
 	/*height: 740px;*/
-	height: 695px;
+	/* height: 695px; */
 	background-size: cover;
 }
-.en .swiper-slide, .en .sld01, .en .sld02, .en .sld03{
+/* .en .swiper-slide, .en .sld01, .en .sld02, .en .sld03{
 	height: 740px;
-}
+} */
 
 
 /*.sld01{*/
@@ -3550,12 +3550,12 @@ ul, li{
 		font-size: 13px !important;
 		margin: 20px 0 25px;
 	}
-	.en .testimonial-panel.s-panel3 {
+	/* .en .testimonial-panel.s-panel3 {
 		height: 690px !important;
 	}
 	.en .applicationbox .swiper-slide, .applicationbox .sld01, .applicationbox .sld02, .applicationbox .sld03 {
 		height: 750px !important;
-	}
+	} */
 
 }
 .testimonial-container .testimonial-panel-bitwage {

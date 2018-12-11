@@ -223,9 +223,7 @@ img {
 	/*
 		 Wallet begin
 	*/
-	.downloadwrap .container {
-			width: 780px;
-	}
+
 	.wallet-box.col-md-4  {
 		width: 33.33333333%;
 	}
@@ -974,7 +972,7 @@ img {
   	    top: 60px;
 	}
 
-	.section-header h3 {
+	.section-header h2.roadMap-tl {
 		font-size: 30px;
 		color: #fff;
 		text-align: center;
@@ -1006,7 +1004,7 @@ img {
     margin: 15px auto 15px;
     line-height: 48px;
     font-weight: normal;
-    background: url(../images/mvs2018/svg/mbox.png) no-repeat;
+    background: url(../images/mvs2018/RoadMap/mbox.png) no-repeat;
     background-size: 100%;
     font-size: 16px;
 	}
@@ -1085,11 +1083,11 @@ img {
 		position: relative;
 		overflow: hidden;
 		color: #333;
-		background: url(../images/mvs2018/svg/roadmap-bgWAP.png) no-repeat;
+		background: url(../images/mvs2018/RoadMap/roadmap-bgWAP.png) no-repeat;
 		background-size: cover;
 	}
 
-	.section-header h3 {
+	.section-header h2.roadMap-tl {
 		font-size: 30px;
 		color: #fff;
 		text-align: center;
@@ -1788,3 +1786,17 @@ img {
 		}
 	}
 }
+
+
+@media (min-width: 1000px){
+	/*
+		 Wallet begin
+	*/
+	.downloadwrap .container {
+		width: 880px;
+	}
+	.wallet-box.col-md-4  {
+		width: 33.33333333%;
+	}
+}
+

@@ -123,7 +123,7 @@ body, h1{
 
  .sl-language{
     top: 16px;
-    right: 0;
+    right: 12px;
     position: absolute;
     margin-top: 0;
  }
@@ -131,7 +131,7 @@ body, h1{
     color: #fff;
     line-height: 25px;
     padding: 5px 15px;
-    width: 70px;
+    width: 95px;
     border: none;
     background: transparent;
     text-transform: none;
@@ -146,8 +146,8 @@ ul.dropdown-menubox {
 .dropdown-menubox
 /*, .menu ul.dropdown-menubox li*/
 {
-	width: 70px;
-	min-width: 70px;
+	width: 95px;
+	min-width: 95px;
 	/*padding-left: 15px;*/
 	margin-bottom: 0;
     background: #141F47;
@@ -1064,7 +1064,7 @@ color: #2E3D6F;
 
 
 /* Road map begin */
-.section-header h3 {
+.section-header h2.roadMap-tl {
     font-size: 36px;
     color: #fff;
     text-align: center;
@@ -1103,7 +1103,7 @@ color: #2E3D6F;
     /* margin-top: 30px; */
 }
 .month-num{
-    background: url(../images/mvs2018/svg/mbox.png) no-repeat;
+    background: url(../images/mvs2018/RoadMap/mbox.png) no-repeat;
     background-size: contain;
     background-position: center;
     height: 52px;
@@ -1116,16 +1116,11 @@ color: #2E3D6F;
    
 }
 @keyframes down{from{opacity:0;transform:translateY(-300px)}to{opacity:1;transform:translateY(0)}}@keyframes right{from{opacity:0;transform:translateX(-300px)}to{opacity:1;transform:translateX(0)}}@keyframes strokeoffset{0%{stroke-dashoffset:1000}100%{stroke-dashoffset:0}}.roadmap{
-    position:relative;overflow:hidden;color:#333;
-    /* background:#f7f7f7; */
-
-    /* background: #0e1741; */
-
-    background: url(../images/mvs2018/svg/roadmap-circles.png) no-repeat;
+    position:relative;
+    overflow:hidden;
+    color:#333;
+    background: url(../images/mvs2018/RoadMap/roadmap-circles.png) no-repeat;
     background-size: cover;
-
-    /* background: url(../images/mvs2018/svg/roadmap-circles.svg) no-repeat; */
-    /* background-position: left top; */
 }
 @media (min-width: 769px){.roadmap{height:auto !important}}@media (min-width: 650px){.roadmap{display:flex}}
 .roadmap::after{content:'';position:absolute;z-index:2;width:100%;height:100%;top:0;left:0;
@@ -1330,7 +1325,7 @@ text-align: center;
 
 
 
-    .roadmap h3{
+    .roadmap h2.roadMap-tl{
         &:after {
             background-image: linear-gradient(-90deg, #8EF8E2 0%, #4DACFF 100%);
         border-radius: 2.52px;
@@ -1457,7 +1452,7 @@ text-align: center;
     margin:0 auto 10px;
     line-height: 56px;
     font-weight: normal;
-    background:url('../images/mvs2018/svg/mbox.png') no-repeat;
+    background:url('../images/mvs2018/RoadMap/mbox.png') no-repeat;
     background-size:100%;
 }
 .roadmapRadius{
@@ -1818,6 +1813,15 @@ text-align: center;
             
         }
           
+
+        .email-us{
+            position: relative;
+            padding-bottom: 5px;
+            font-weight: 700;
+            &:hover{
+                color: #009fe1;
+            }
+        }
           .bc-desinfo {
             margin-left: 46px; }
           
@@ -2521,6 +2525,8 @@ input{
      
         }
 }
+
+
 
 
 // FY Pagination end

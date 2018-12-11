@@ -1726,17 +1726,19 @@ audio, canvas, progress, video {
 .service-item h3, .service-item p, .service-item span{
 	/* font-family: "Source Sans Pro","Segoe UI","Droid Sans",Tahoma,Arial,sans-serif; */
 	font-style:normal;
-	font-size:16px;
+	font-size:14px;
 	font-weight: lighter;
 	letter-spacing:.08em;
 	/* text-transform:uppercase; */
 	line-height:20px;
-	color: #009fe1;
+	color: #3983c7;
 	margin-top: 25px;
 	position: relative;
 	bottom: 6px;
 }
-
+.service-item span{
+	font-weight: 700;
+}
 #documents .service-item p, .etp-about .des, .etp-about .service-item:hover .des{
 	color: #fff;
 	font-weight: 400;
@@ -1768,7 +1770,7 @@ audio, canvas, progress, video {
 	/* line-height:88px; */
 	text-align:center;
 	font-size: 40px;
-	color:#009fe1;
+	color:#3983c7;
 	/*margin-right: 15px;*/
 	-webkit-border-radius:40px;
 	-moz-border-radius:40px;
@@ -3689,7 +3691,7 @@ h2.text-normal{
 
 /*download list*/
 .downloadwrap .service-item {
-	padding: 50px 0 20px;
+	padding: 0 0  10px 0;
 
 }
 .hover-show {
@@ -3705,8 +3707,8 @@ h2.text-normal{
 	color: #35444E;
 }
 .hover-show-qrcode {
-	padding-top: 25px;
-	border-top: 1px dashed #ccc;
+	padding-top: 15px;
+	border-top: 1px solid #000;
 	color: #35444E;
 }
 .spe-hover, .spe-hoverh {
@@ -4343,10 +4345,9 @@ h2.text-normal{
 }
 
 .wallet-box {
-	padding-left: 0;
 	padding-right: 10px;
 }
 
 .download-qrcode {
-	width: 200px;
+	width: 150px;
 }

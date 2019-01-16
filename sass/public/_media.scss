@@ -607,6 +607,12 @@ img {
 			// 	display: block;
 			// }
 }
+
+@media only screen and (max-width: 900px) {
+	.btn-mbox{
+		background-image: linear-gradient(-90deg, #65FAE0 0%, #1D99F3 98%);
+	}
+}
 @media only screen and (min-width:768px )and (max-width: 900px) {
 	.F-box {
 			background: url(../images/mvs2018/F-img.png) no-repeat;

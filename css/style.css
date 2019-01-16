@@ -1563,6 +1563,7 @@ audio, canvas, progress, video {
 .desinfo{
 	color: #fff;
 	font-size:18px;
+	margin: 60px 0;
 }
 .mvs-slbox{
 	margin-bottom: 30px;

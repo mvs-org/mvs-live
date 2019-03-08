@@ -1,7 +1,7 @@
 var app = angular.module('app', ['ngSanitize', 'angularUtils.directives.dirPagination']);
 
 app.component('announcement', {
-    template: '<li class="li-item fadeInUp animated"><a ng-href="{{$ctrl.link}}" target="_blank"><h3 class="fl-t">{{$ctrl.header}}</h3></a><div class="ant-despro clearfix"><div class="title-h5 fl" ng-bind-html="$ctrl.content"></div></div><div class="news-date">{{$ctrl.date | date : \'shortDate\'}}<a class="detail-more fr" ng-href="{{$ctrl.link}}" target="_blank"> &gt;</a></div></li>',
+    template: '<li class="li-item fadeInUp animated"><a ng-href="{{$ctrl.link}}" target="_blank"><h3 class="fl-t">{{$ctrl.header}}</h3></a><div class="ant-despro clearfix"><div class="title-h5 fl" ng-bind-html="$ctrl.content"></div></div><div class="news-date">{{$ctrl.date | date : \'mediumDate\'}}<a class="detail-more fr" ng-href="{{$ctrl.link}}" target="_blank"> &gt;</a></div></li>',
     bindings: {
         header: '<',
         content: '<',

@@ -2264,11 +2264,8 @@ text-align: center;
 }
 .Annt-wrap{
     .li-item{
-        border-bottom: 1px solid #EDEDED;
+        border-top: 1px solid #EDEDED;
         padding: 15px 0  10px;
-        &:last-child{
-            border-bottom: none;
-        }
         .title-h5{
             margin: .8em 0;
         }
@@ -2535,6 +2532,10 @@ input{
         }
 }
 
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #508BF4;
+    border-color: #508BF4;
+}
 
 
 

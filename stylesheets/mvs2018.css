@@ -978,8 +978,7 @@ height: 100px;  */ height: 100%; max-height: 255px; max-width: 382px; width: 100
 /* display: block; */
 .NewsANN-box { padding: 65px 0; }
 
-.Annt-wrap .li-item { border-bottom: 1px solid #EDEDED; padding: 15px 0  10px; }
-.Annt-wrap .li-item:last-child { border-bottom: none; }
+.Annt-wrap .li-item { border-top: 1px solid #EDEDED; padding: 15px 0  10px; }
 .Annt-wrap .li-item .title-h5 { margin: .8em 0; }
 .Annt-wrap .fl-t { font-size: 16px; color: #333333; letter-spacing: 0; font-weight: 700; }
 
@@ -1030,6 +1029,8 @@ input { outline: none; }
 .Paginatione a.countPage { border-left: none; border-right: none; }
 .Paginatione a.prev { background: url(../images/mvs2018/left-bicon.png) no-repeat; background-size: 50%; background-position: center; width: 35px; /* height: 35px; */ text-indent: -999em; }
 .Paginatione a.next { background: url(../images/mvs2018/right-bicon.png) no-repeat; background-size: 50%; background-position: center; width: 35px; text-indent: -999em; }
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus { background-color: #508BF4; border-color: #508BF4; }
 
 /* Media Style 
 */
@@ -1312,3 +1313,5 @@ width:100%; */ padding: 0; height: 50px; line-height: 50px; }
 @media (min-width: 1000px) { /* 	 Wallet begin */
   .downloadwrap .container { width: 880px; }
   .wallet-box.col-md-4 { width: 33.33333333%; } }
+
+/*# sourceMappingURL=mvs2018.css.map */

@@ -227,16 +227,12 @@
 			<div class="FYbox News-wbox ccom-wbox">
 
 				<h2 class="News-title WAP-show" >News</h2>
-				<div class="News-head flexBox-SpaceBetween clearfix">
-					<div class="News-searchbox fl">
-						<input type="text" class="News-search" ng-model="searchterm" placeholder="Search Keywords">	
-					</div>
-					
+				<div class="News-head flexBox-SpaceBetween clearfix">			
 					<h2 class="News-title fr PC-show">News</h2>
 				</div>
 
 				<div class="vip-user-list FYclear M-boxpage News-box show-ft clearfix">
-					<news dir-paginate="n in news | itemsPerPage:4 | filter: searchterm" header="n.title" content="n.content" link="n.link.url" date="n.date"></news>
+					<news dir-paginate="n in news | itemsPerPage:4" header="n.title" content="n.content" link="n.link.url" date="n.date"></news>
 				</div>
 
 				<dir-pagination-controls class="pull-right" max-size="7"></dir-pagination-controls>

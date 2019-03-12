@@ -38,10 +38,7 @@ app.controller('news', ['$scope', '$http', function ($scope, $http) {
     
     $http.get('https://explorer.mvs.org/api/content/news?lang='+language)
         .then((response) => {
-            $scope.news = response.data.map(n => {
-                n.searchtext = n.title + n.content;
-                return n;
-            });
+            $scope.news = response.data;
         })
         .catch(error => {
             console.error(error)

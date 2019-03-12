@@ -28,17 +28,17 @@ app.controller('news', ['$scope', '$http', function ($scope, $http) {
 
 
     $scope.load = function(language){
-    $http.get('https://explorer.mvs.org/api/content/announcements?lang='+language)
+    $http.get('https://explorer.mvs.org/api/content/announcements?lang='+language+"&limit=100")
     .then((response) => {
-        $scope.announcements = response.data;
+        $scope.announcements = response.data.results;
     })
     .catch(error => {
         console.error(error)
     })
     
-    $http.get('https://explorer.mvs.org/api/content/news?lang='+language)
+    $http.get('https://explorer.mvs.org/api/content/news?lang='+language+"&limit=100")
         .then((response) => {
-            $scope.news = response.data;
+            $scope.news = response.data.results;
         })
         .catch(error => {
             console.error(error)

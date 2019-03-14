@@ -30,7 +30,7 @@ app.controller('news', ['$scope', '$http', function ($scope, $http) {
     $scope.load = function(language){
     $http.get('https://explorer.mvs.org/api/content/announcements?lang='+language+"&limit=100")
     .then((response) => {
-        $scope.announcements = response.data.results;
+        $scope.announcements = response.data.results.slice(0,3);
     })
     .catch(error => {
         console.error(error)

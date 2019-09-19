@@ -435,12 +435,12 @@ a i:hover,button:hover,input[type=submit]:hover{
 	margin-right:.5em
 }
 
-.btn.outline{
+/* .btn.outline{ */
 	/*color:#111;*/
 	/*background:0 0;*/
 	/*border:2px solid #111;*/
 	/*padding:10px 23px*/
-}
+/* } */
 
 a.btn.outline:hover,button.outline:hover,input[type=submit].outline:hover, .btn.cc-cbtn:hover{
 	color:#fff;

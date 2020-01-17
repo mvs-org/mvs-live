@@ -152,7 +152,7 @@ height: 320px; */
 .w960, .water-basic { /* position: relative; */ /* width: 960px; */ max-width: 965px; margin: 0 auto; }
 
 .TeamBox .item { /* position: absolute; */ /* width: 230px;
-height: 320px; */ /* font-family: PingFangSC-Regular; */ font-weight: lighter; width: 220px; height: 350px; text-align: center; margin: 0 auto 14px; padding: 25px 10px; box-sizing: border-box; /* margin: 5px; */ transition: all 1s; /* padding:10px 10px 10px 10px; */ /* border:1px solid #ccc; */ border-radius: 5px; background: rgba(255, 255, 255, 0.05); /* margin-bottom: 14px */ /* box-shadow: 0 0 5px #ccc; */ }
+height: 320px; */ /* font-family: PingFangSC-Regular; */ font-weight: lighter; width: 220px; height: 365px; text-align: center; margin: 0 auto 14px; padding: 25px 10px; box-sizing: border-box; /* margin: 5px; */ transition: all 1s; /* padding:10px 10px 10px 10px; */ /* border:1px solid #ccc; */ border-radius: 5px; background: rgba(255, 255, 255, 0.05); /* margin-bottom: 14px */ /* box-shadow: 0 0 5px #ccc; */ }
 
 .TeamBox .item:hover { /* box-shadow: 0 3px 12px 0 rgba(14, 25, 69 ,0.9); */ /* box-shadow: 6px 9px 13px 0 rgba(188,188,188,0.20); */ /* box-shadow: 0px 1px 29px 0 rgba(188,188,188,0.20); */ box-shadow: -5px 13px 25px 0 rgba(1, 15, 49, 0.9); /* border-radius: 10px; */ /* background: rgb(14, 25, 69); */ }
 
@@ -1061,7 +1061,7 @@ img { vertical-align: middle; width: 100%; }
   .TeamBox .item * { font-size: 12px; }
   .TeamBox .item .t-name { font-size: 14px; }
   .w-item { padding-right: 5px; padding-left: 5px; }
-  .w-item .item { height: 320px !important; /* padding: 20px !important;
+  .w-item .item { height: 335px !important; /* padding: 20px !important;
 margin-bottom: 45px; */ }
   /* Team */
   .etp-desinfo { margin: 50px 0 30px; }

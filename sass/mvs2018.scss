@@ -2200,21 +2200,20 @@ text-align: center;
             .Wallet-icon{
                 @extend  .w-ciclebg;
             }
-
-       
         }
-        // .wallet-box.col-md-4  {
-            // width: 33.33333333%;
-        // }
-        // .wcont-box{
-            // padding: 10px 0;
-        // }
+
         .md5-data {
             margin-bottom: 0;
             border-top: 1px solid #000;
             color: #8E8E8E;
             padding-top: 8px;
+            word-break: break-all;
         }
+
+        .wallet-box {
+            margin-bottom: 30px;
+        }
+
         .hover-show ul li{
             position: relative;
             .dldata-title{

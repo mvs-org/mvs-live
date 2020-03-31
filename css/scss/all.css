@@ -634,7 +634,8 @@ body {
 .md5-data {
   margin-bottom: 12px;
   border-bottom: 1px dashed #ccc;
-  padding-bottom: 12px; }
+  padding-bottom: 12px; 
+  word-break: break-all }
   .md5-data.mvs-mywallet:hover a {
     color: #02CBFF;
     font-weight: 700; }

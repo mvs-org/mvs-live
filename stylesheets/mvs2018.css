@@ -83,10 +83,9 @@ ul.dropdown-menubox li a:hover { background: transparent; color: #02CBFF; }
 
 .F-box { background: #141F47; }
 
-.white-paperbox .btn-mbox{
-  margin: 0 auto 30px !important;
-}
-.btn-mbox { box-shadow: 0 0 4px 0 rgba(129, 255, 241, 0.53); border-radius: 27.48px; /* font-family: PingFangSC-Regular; */ font-size: 16px; color: #FFF; letter-spacing: 0; text-align: center; padding: 12px 30px; display: block;  max-width: 320px; width: 100%; }
+.white-paperbox .btn-mbox { margin: 0 auto 30px !important; }
+
+.btn-mbox { box-shadow: 0 0 4px 0 rgba(129, 255, 241, 0.53); border-radius: 27.48px; /* font-family: PingFangSC-Regular; */ font-size: 16px; color: #FFF; letter-spacing: 0; text-align: center; padding: 12px 30px; display: block; max-width: 320px; width: 100%; }
 
 .btn-mbox:hover { color: #FFF; background-image: linear-gradient(-90deg, #3bd0b6 0%, #0c76c3 98%); }
 
@@ -960,7 +959,9 @@ height: 100px;  */ height: 100%; max-height: 255px; max-width: 382px; width: 100
 
 .navh-act.spac .fa { color: #fff; }
 
-.md5-data { margin-bottom: 0; border-top: 1px solid #000; color: #8E8E8E; padding-top: 8px; }
+.md5-data { margin-bottom: 0; border-top: 1px solid #000; color: #8E8E8E; padding-top: 8px; word-break: break-all; }
+
+.wallet-box { margin-bottom: 30px; }
 
 .hover-show ul li { position: relative; }
 .hover-show ul li .dldata-title { line-height: 1.5; }
@@ -1091,7 +1092,7 @@ line-height: 30px; */ } }
   .AANS-wbox { width: 35%; border: 1px solid #E6E6E6; padding: 20px; }
   .News-wbox { width: 65%; }
   .NewsANN-box .ccom-wbox { float: left; }
-  .News-box {margin: 0 0 32px 32px; }
+  .News-box { margin-left: 32px; }
   #signup { margin: 0 0 0 50px; } }
 @media (max-width: 767px) { .mvs-slgdes { top: -9px; font-size: 1.8rem; display: inline-block; padding: 0 6px; }
   .F-box { background: url(../images/mvs2018/F-img.png) no-repeat; background-size: 80%; /* background-position: center 12px; */ background-position: center 140px; padding: 60px 0; height: auto; height: 500px; display: block; }

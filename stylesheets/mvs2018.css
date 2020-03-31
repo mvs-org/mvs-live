@@ -959,7 +959,7 @@ height: 100px;  */ height: 100%; max-height: 255px; max-width: 382px; width: 100
 
 .navh-act.spac .fa { color: #fff; }
 
-.md5-data { margin-bottom: 0; border-top: 1px solid #000; color: #8E8E8E; padding-top: 8px; word-break: break-all; }
+.md5-data { margin-bottom: 0; border-top: 1px solid #000; color: #8E8E8E; padding-top: 8px; }
 
 .wallet-box { margin-bottom: 30px; }
 

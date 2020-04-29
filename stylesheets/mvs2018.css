@@ -1221,7 +1221,8 @@ line-height: 30px; */ } }
   .News-wbox .PC-show { display: block !important; }
   .News-head .News-title { border-bottom: 1px solid #EDEDED; display: block; height: 35px; width: 60%; text-align: right; line-height: 35px; font-size: 16px; }
   .rightimgcbox img { max-width: 240px !important; /* margin-top: 160px !important; */ } }
-@media only screen and (min-width: 769px) { .TeamBox { min-height: 1600px; }
+@media only screen and (min-width: 769px) { 
+  /* .TeamBox { min-height: 1600px; } */
   .btn-mbox.wp-btn { margin-right: 20px; }
   .PC-show { display: block; }
   .WAP-show { display: none; }
